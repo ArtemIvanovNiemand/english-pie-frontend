@@ -4,4 +4,7 @@
     <option name="languageLevel" value="JSX" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="RVM: ruby-2.6.0" project-jdk-type="RUBY_SDK" />
+  <component name="StylelintService">
+    <option name="executable" value="/stylelint" />
+  </component>
 </project>
