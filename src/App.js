@@ -2,7 +2,7 @@ import React from 'react';
 import { observer } from 'mobx-react';
 import styled from 'styled-components';
 
-import GroceryStore from 'stores/main';
+import GroceryStore from 'src/stores/main';
 import './App.css';
 
 const AppWrapper = styled.div`
