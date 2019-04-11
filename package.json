@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject",
     "lint:js": "eslint --ext .js .",
     "lint:css": "stylelint './src/**/*.js'"
   },
@@ -22,19 +22,25 @@
     }
   },
   "dependencies": {
+    "mobx": "^5.9.4",
+    "mobx-react": "^5.4.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "2.1.8",
     "styled-components": "^4.2.0"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
+    "@babel/plugin-proposal-decorators": "^7.4.0",
+    "babel-plugin-styled-components": "^1.10.0",
+    "customize-cra": "^0.2.12",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4",
     "husky": "^1.3.1",
     "lint-staged": "^8.1.5",
+    "react-app-rewire-mobx": "^1.0.9",
+    "react-app-rewired": "^2.1.1",
     "stylelint": "^9.10.1",
     "stylelint-config-rational-order": "^0.1.0",
     "stylelint-config-recommended": "^2.1.0",

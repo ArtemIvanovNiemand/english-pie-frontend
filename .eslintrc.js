@@ -12,6 +12,7 @@ module.exports = {
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
+      legacyDecorators: true
     },
     ecmaVersion: 2018,
     sourceType: 'module',
@@ -22,5 +23,12 @@ module.exports = {
   parser: "babel-eslint",
   rules: {
     "react/jsx-filename-extension": 0,
+  },
+  settings: {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    },
   },
 };

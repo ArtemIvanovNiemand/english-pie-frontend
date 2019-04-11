@@ -1,35 +1,35 @@
 import React from 'react';
+import { observer } from 'mobx-react';
 import styled from 'styled-components';
-import logo from './logo.svg';
+
+import GroceryStore from 'stores/main';
 import './App.css';
 
 const AppWrapper = styled.div`
-  color: #fff;
+  color: #4ff;
   text-align: left;
 `;
 
-const App = () => (
-  <AppWrapper>
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>
-                Edit
-        {' '}
-        <code>src/App.js</code>
-        {' '}
-                and save to reload.2
-      </p>
+@observer
+class App extends React.Component {
+  render() {
+    return (
+      <AppWrapper>
+        TEST
 
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-          Learn React
-      </a>
-    </header>
-  </AppWrapper>
-);
+        {
+          GroceryStore.count
+        }
+
+        <button
+          type="button"
+          onClick={GroceryStore.inc}
+        >
+          inc
+        </button>
+      </AppWrapper>
+    );
+  }
+}
 
 export default App;
